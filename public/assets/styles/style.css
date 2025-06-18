@@ -1,0 +1,165 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto/static/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url(../fonts/Nunito/static/Nunito-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    width: 100%;
+    font-family: 'Nunito';
+    margin: 0;
+}
+
+.container {
+    padding: 4rem;
+}
+
+main {
+    background-color: #ecf0f1;
+}
+h1 {
+    font-size: 10rem;
+    text-shadow: 2px 2px 4px rgba(252, 247, 247, 0.8);
+    width: 80%;
+}
+h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+h1, h2, h3 {
+    font-family: 'Roboto';
+    text-align: center;
+    color: #2c3b51;
+}
+/* NAVBAR  */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10rem;
+    background-color: #2c3b51;
+}
+
+.logo {
+    width: 25%;
+}
+
+ul {
+    display: flex;
+    gap: 2rem;
+    padding-right: 10rem;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+}
+/* BANNER  */
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/banner.jpeg);
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.btn-primary {
+    text-align: center;
+    margin-top: 8rem;
+    width: 8%;
+    border-radius: 8px;
+    background-color: #e74c3c;
+    padding: 25px 18px;
+    transition: 0.3s ease-out;
+}
+
+.btn-primary:hover {
+    border-color: #e74c3c;
+    color: #e74c3c;
+    background-color: white;
+}
+
+
+/* TEMOIGNAGES  */
+.temoignages-text {
+    text-align: center;
+}
+
+.temoignages-text .date{
+    margin-bottom: 6rem;
+    margin-top: -4rem;
+}
+
+.temoignages-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.temoignages-cards {
+    width: 80%;
+    display: flex;
+
+    gap: 0.2rem;
+    padding: 6rem;
+}
+
+.temoignages-card {
+    background-color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+.temoignages-card img {
+    border-radius: 50%;
+    margin-top: -6rem;
+    margin-bottom: 3rem;
+    border: 3px solid white;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);;
+    width: 150px;
+    height: 150px;
+}
+
+.temoignages-card {
+    font-style: italic;
+}
+
+.temoignages-card .p-name {
+    margin-top: 2rem;
+    font-style: normal;
+    text-align: right;
+    font-weight: 900;
+}
+/* FOOTER  */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: #2c3b51;
+    color: white;
+}
+.border {
+    border-top: solid 1px #42536c;
+}
+footer a {
+    font-weight: 400;
+}
