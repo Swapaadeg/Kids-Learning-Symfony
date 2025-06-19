@@ -27,10 +27,10 @@
                 </div> 
             {% endblock %}
         </header>
-
-        {% block content %}
-        {% endblock %}
-
+        <main>
+            {% block content %}
+            {% endblock %}
+        </main>
         {% block footer %}
             <footer>
                 <a href="{{ path("home")}}"><img class="logo"src="{{asset("assets/img/logo.png")}}" alt="Logo de l'entreprise"></a>

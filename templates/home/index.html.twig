@@ -1,34 +1,32 @@
 {% extends 'base.html.twig' %}
 {% block content %}
-    <main>
-        <section class="temoignages__wrapper container">
-            <div class="temoignages-text">
-                <p class="date">Aujourd'hui on est le {{ "now"|date("d/m/Y") }}</p>
-                <h2>Témoignages</h2>
-                <p>Découvrez ce que les gens disent de notre plateforme</p>
-            </div>
-            <div class="temoignages-content">
-                <div class="temoignages-cards">
-                    <div class="temoignages-card therese">
-                        <img src="{{asset("assets/img/parent-1.jpeg")}}"  alt="Photo de Thérèse">
-                        <p>"Ma fille a beaucoup appris grâce à cette plateforme. Les cours sont très informatifs et faciles à comprendre."</p>
-                        <p class="p-name">- Thérèse Dupont</p>
-                    </div>
+    <section class="temoignages__wrapper container">
+        <div class="temoignages-text">
+            <p class="date">Aujourd'hui on est le {{ "now"|date("d/m/Y") }}</p>
+            <h2>Témoignages</h2>
+            <p>Découvrez ce que les gens disent de notre plateforme</p>
+        </div>
+        <div class="temoignages-content">
+            <div class="temoignages-cards">
+                <div class="temoignages-card therese">
+                    <img src="{{asset("assets/img/parent-1.jpeg")}}"  alt="Photo de Thérèse">
+                    <p>"Ma fille a beaucoup appris grâce à cette plateforme. Les cours sont très informatifs et faciles à comprendre."</p>
+                    <p class="p-name">- Thérèse Dupont</p>
+                </div>
 
-                    <div class="temoignages-card jean">
-                        <img src="{{asset("assets/img/parent-2.jpeg")}}"  alt="Photo de Jean">
-                        <p>"Une excellente ressource pour l'apprentissage en ligne. Je la recommande à tout le monde!"</p>
-                        <p class="p-name">- Jean Curie</p>
-                    </div>
+                <div class="temoignages-card jean">
+                    <img src="{{asset("assets/img/parent-2.jpeg")}}"  alt="Photo de Jean">
+                    <p>"Une excellente ressource pour l'apprentissage en ligne. Je la recommande à tout le monde!"</p>
+                    <p class="p-name">- Jean Curie</p>
+                </div>
 
-                    <div class="temoignages-card albert">
-                        <img src="{{asset("assets/img/parent-3.jpeg")}}"  alt="Photo de Albert">
-                        <p>"Les ressources disponibles snt très utiles et variées. Une plateforme indispensable pour l'éducation"</p>
-                        <p class="p-name">- Albert Dorne</p>
-                    </div>
+                <div class="temoignages-card albert">
+                    <img src="{{asset("assets/img/parent-3.jpeg")}}"  alt="Photo de Albert">
+                    <p>"Les ressources disponibles snt très utiles et variées. Une plateforme indispensable pour l'éducation"</p>
+                    <p class="p-name">- Albert Dorne</p>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 {% endblock %}
 
