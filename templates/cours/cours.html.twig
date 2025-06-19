@@ -1,7 +1,38 @@
 {% extends 'base.html.twig' %}
 
+{% block content %}
+<main>
+    <section class="cours__wrapper container">
+        <div class="cours-text">
+            <h2>Nos Cours</h2>
+            <p>Apprenez à votre rythme avec nos cours en ligne</p>
+        </div>
 
+        <div class="cours-content">
+            <div class="cours-cards">
+                <div class="cours-card math">
+                    <img src="{{asset("assets/img/maths.jpeg")}}" alt="Une élève appliquée au tableau">
+                    <h3>Mathématiques</h3>
+                    <p>Explorez les concepts fondamentaux et avancés des mathématiques et devenez un maître des nombres.</p>
+                    <a class="btn-primary"href="{{ path("contact")}}">Démarrer l'Apprentissage</a>
+                </div>
 
-{% block body %}
+                <div class="cours-card sciences">
+                    <img src="{{asset("assets/img/science.jpeg")}}" alt="Des élèves faisant de la chimie">
+                    <h3>Sciences</h3>
+                    <p>Découvrez les mystères de l'univers, de la biologie moléculaire à la physique quantique.</p>
+                    <a class="btn-primary"href="{{ path("contact")}}">Démarrer l'Apprentissage</a>
+                </div>
 
+                <div class="cours-card litterature">
+                    <img src="{{asset("assets/img/literature.jpeg")}}" alt="Un élève lisant un livre">
+                    <h3>Littérature</h3>
+                    <p>Parcourez les oeuvres des plus grands auteurs, poètes et dramaturges de l'histoire.</p>
+                    <a class="btn-primary"href="{{ path("contact")}}">Démarrer l'Apprentissage</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
 {% endblock %}
+
