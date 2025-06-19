@@ -9,39 +9,39 @@
     </head>
     <body>
         <header>
-        {% block navbar %}
-            <nav class="navbar">
-                <a href="{{ path("home")}}"><img class="logo" src="{{asset("assets/img/logo.png")}}" alt="Logo de l'entreprise"></a>
-                <ul>
-                    <li><a href="{{ path("home")}}">Accueil</a></li>
-                    <li><a href="{{ path("cours")}}">Cours</a></li>
-                    <li><a href="{{ path("ressources")}}">Ressources</a></li>
-                    <li><a href="{{ path("contact")}}">Contact</a></li>
-                </ul>
-            </nav>
+            {% block navbar %}
+                <nav class="navbar">
+                    <a href="{{ path("home")}}"><img class="logo" src="{{asset("assets/img/logo.png")}}" alt="Logo de l'entreprise"></a>
+                    <ul>
+                        <li><a href="{{ path("home")}}">Accueil</a></li>
+                        <li><a href="{{ path("cours")}}">Cours</a></li>
+                        <li><a href="{{ path("ressources")}}">Ressources</a></li>
+                        <li><a href="{{ path("contact")}}">Contact</a></li>
+                    </ul>
+                </nav>
             {% endblock %}
             {% block banner %}
-            <div class="banner">
-                <h1>Bienvenue sur Kids Learning</h1>
-                <a class="btn-primary" href="{{ path("cours")}}">Découvrir</a>
-            </div> 
-        </header>
+                <div class="banner">
+                    <h1>Bienvenue sur Kids Learning</h1>
+                    <a class="btn-primary" href="{{ path("cours")}}">Découvrir</a>
+                </div> 
             {% endblock %}
+        </header>
 
         {% block content %}
         {% endblock %}
 
         {% block footer %}
-        <footer>
-            <a href="{{ path("home")}}"><img class="logo"src="{{asset("assets/img/logo.png")}}" alt="Logo de l'entreprise"></a>
-            <p>Nous sommes ici pour répondre à vos questions et inquiétudes.</p>
+            <footer>
+                <a href="{{ path("home")}}"><img class="logo"src="{{asset("assets/img/logo.png")}}" alt="Logo de l'entreprise"></a>
+                <p>Nous sommes ici pour répondre à vos questions et inquiétudes.</p>
 
-            <a href="">info@kids-learning.fr</a>
-            <p>01 23 45 67 89</p>
-            <a href="{{ path("contact")}}">Formulaire de contact</a>
-            <div class="border"></div>
-            <p>&copy 2023 Kids Leearning. Tous droits réservés.</p>
-        </footer>
+                <a href="">info@kids-learning.fr</a>
+                <p>01 23 45 67 89</p>
+                <a href="{{ path("contact")}}">Formulaire de contact</a>
+                <div class="border"></div>
+                <p>&copy 2023 Kids Leearning. Tous droits réservés.</p>
+            </footer>
         {% endblock %}
     </body>
 </html>
